@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Balises meta pour le jeu de caractères, la compatibilité et le design responsive -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PeerChat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Lien vers la feuille de style principale pour cette page -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <!--
+        Conteneur vidéo principal qui contient les deux éléments vidéo :
+        - Initialement, seul user-1 (vidéo locale) est visible
+        - user-2 (vidéo distante) apparaît lorsqu'un autre utilisateur se connecte
+    -->
+    <div id="videos">
+        <!-- Flux vidéo local (votre caméra) -->
+        <video class="video-player" id="user-1" autoplay playsinline></video>
+        <!-- Flux vidéo distant (la caméra de l'autre personne) - initialement caché -->
+        <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+
+    <!-- Panneau de contrôle pour l'interface de chat vidéo -->
+    <div id="controls">
+        <!-- Bouton de basculement de la caméra - active/désactive la caméra -->
+        <div class="control-container" id="camera-btn">
+            <img src="icons/camera.png" />
+        </div>
+
+        <!-- Bouton de basculement du microphone - active/désactive le micro -->
+        <div class="control-container" id="mic-btn">
+            <img src="icons/mic.png" />
+        </div>
+
+        <!-- Bouton pour quitter l'appel - retourne au lobby -->
+        <a href="lobby.html">
+            <div class="control-container" id="leave-btn">
+                <img src="icons/phone.png" />
+            </div>
+        </a>
+    </div>
+
+</body>
+<!--
+    Scripts externes :
+    - Agora RTM SDK pour la signalisation entre pairs
+    - Fichier JavaScript principal qui gère les connexions WebRTC
+-->
+<script src='agora-rtm-sdk-1.4.4.js'></script>
+<script src='main.js'></script>
+</html>

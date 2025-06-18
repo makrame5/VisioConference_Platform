@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Balises meta pour le jeu de caractères, la compatibilité et le design responsive -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PeerChat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Lien vers la feuille de style spécifique au lobby -->
+    <link rel='stylesheet' type='text/css' media='screen' href='lobby.css'>
+</head>
+<body>
+    <!--
+        Conteneur principal du lobby - c'est le point d'entrée de l'application
+        où les utilisateurs peuvent saisir un code de salle pour rejoindre un chat vidéo
+    -->
+    <main id="lobby-container">
+        <div id="form-container">
+            <!-- Section d'en-tête avec message de bienvenue -->
+            <div id="form__container__header">
+                <p>👋 Créer OU Rejoindre une Salle</p>
+            </div>
+
+            <!-- Formulaire pour saisir un code de salle -->
+            <div id="form__content__wrapper">
+                <form id="join-form">
+                    <!-- Champ de saisie pour le code de salle/lien d'invitation -->
+                    <input type="text" name="invite_link" required placeholder="Entrez le code de salle"/>
+                    <!-- Bouton de soumission pour rejoindre la salle -->
+                    <input type="submit" value="Rejoindre la Salle" />
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+<!--
+    JavaScript pour gérer la soumission du formulaire :
+    1. Empêche la soumission par défaut du formulaire
+    2. Récupère le code de salle du champ de saisie
+    3. Redirige vers la page de chat vidéo avec le code de salle comme paramètre d'URL
+-->
+<script>
+    // Obtenir une référence à l'élément de formulaire
+    let form = document.getElementById('join-form')
+
+    // Ajouter un écouteur d'événement pour la soumission du formulaire
+    form.addEventListener('submit', (e) => {
+        // Empêcher le comportement de soumission par défaut du formulaire
+        e.preventDefault()
+        // Récupérer le code de salle du champ de saisie
+        let inviteCode = e.target.invite_link.value
+        // Rediriger vers la page de chat vidéo avec le code de salle comme paramètre d'URL
+        window.location = `index.html?room=${inviteCode}`
+    })
+</script>
+
+</html>

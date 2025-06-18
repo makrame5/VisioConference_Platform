@@ -1,0 +1,115 @@
+/*
+ * Réinitialisation globale pour assurer un style cohérent entre les navigateurs
+ * Définit box-sizing à border-box pour des mises en page plus prévisibles
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+ * Conteneur vidéo principal
+ * Utilise CSS Grid pour la mise en page avec une seule colonne
+ * Occupe toute la hauteur de la fenêtre
+ */
+#videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*
+ * Style pour les deux éléments vidéo
+ * Fond noir pour s'assurer qu'aucun espace vide n'est visible lorsque la vidéo ne remplit pas le conteneur
+ * object-fit: cover fait que la vidéo remplit le conteneur tout en maintenant le ratio d'aspect
+ */
+.video-player{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+ * La vidéo distante est masquée par défaut
+ * Elle sera affichée lorsqu'un autre utilisateur rejoindra l'appel
+ */
+#user-2{
+    display: none;
+}
+
+/*
+ * Style pour la vidéo locale lors d'un appel avec un autre utilisateur
+ * Crée un effet d'image dans l'image plus petit dans le coin supérieur gauche
+ */
+.smallFrame{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 170px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #b366f9;
+    -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+    z-index: 999; /* Assure qu'il apparaît au-dessus des autres éléments */
+}
+
+/*
+ * Conteneur pour les boutons de contrôle
+ * Fixé au centre inférieur de l'écran
+ */
+#controls{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centrer horizontalement */
+    display: flex;
+    gap: 1em; /* Espace entre les boutons de contrôle */
+}
+
+/*
+ * Style pour chaque bouton de contrôle
+ * Boutons circulaires violets avec icônes centrées
+ */
+.control-container{
+    background-color: rgb(179, 102, 249, .9); /* Violet avec légère transparence */
+    padding: 20px;
+    border-radius: 50%; /* Rend les boutons circulaires */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Style pour les icônes à l'intérieur des boutons de contrôle */
+.control-container img{
+    height: 30px;
+    width: 30px;
+}
+
+/*
+ * Le bouton de départ a une couleur différente (rouge) pour le distinguer
+ * des boutons de basculement
+ */
+#leave-btn{
+    background-color: rgb(255, 80, 80, 1);
+}
+
+/*
+ * Design responsive pour les écrans plus petits
+ * Réduit la taille de la vidéo image dans l'image et des boutons de contrôle
+ */
+@media screen and (max-width: 600px) {
+    .smallFrame{
+        height: 80px;
+        width: 120px;
+    }
+
+    .control-container img{
+        height: 20px;
+        width: 20px;
+    }
+}
