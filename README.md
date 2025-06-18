@@ -19,8 +19,6 @@
 
 ## 🧱 Technologies utilisées
 
-| Technologie | Rôle |
-|-------------|------|
 | **HTML/CSS/JavaScript** | Interface utilisateur |
 | **WebRTC API** | Connexion audio/vidéo en P2P |
 | **Socket.io** (ou WebSocket) | Signalisation entre clients |
