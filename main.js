@@ -1,6 +1,6 @@
 // ID d'application Agora - nécessaire pour le service RTM (Real-Time Messaging)
 // Utilisé pour la signalisation entre pairs afin d'établir des connexions WebRTC
-let APP_ID = "98fbff14715044bab54a03730d060763"
+let APP_ID = ""
 
 // Jeton d'authentification (null signifie que nous utilisons l'authentification par ID d'application)
 let token = null;
