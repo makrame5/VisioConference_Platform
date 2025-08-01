@@ -1,46 +1,177 @@
-﻿# visioconference Platform 
+﻿
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
 
-````markdown
-# 🎥 PeerMeet - Application de visioconférence P2P
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-**PeerMeet** est une application de visioconférence basée sur une architecture **peer-to-peer** (P2P) utilisant la technologie **WebRTC**, permettant des appels vidéo en temps réel sans passer par un serveur centralisé pour le transfert de données.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/makrame5/VisioConference_Platform">
+    <img src="icons/camera.png" alt="Logo" width="80" height="80">
+  </a>
 
----
+  <h3 align="center">PeerChat – Plateforme de Visioconférence Moderne</h3>
 
-## 🚀 Fonctionnalités
+  <p align="center">
+    Application web de visioconférence moderne, rapide et intuitive.
+    <br />
+    <a href="https://github.com/makrame5/VisioConference_Platform"><strong>Explorer la doc »</strong></a>
+    <br />
+    <br />
+    <a href="#">Voir la démo</a>
+    &middot;
+    <a href="https://github.com/makrame5/VisioConference_Platform/issues/new?labels=bug">Signaler un bug</a>
+    &middot;
+    <a href="https://github.com/makrame5/VisioConference_Platform/issues/new?labels=enhancement">Demander une fonctionnalité</a>
+  </p>
+</div>
 
-- 📡 Connexion directe entre deux pairs (WebRTC)
-- 🎥 Streaming audio et vidéo en temps réel
-- 🔐 Communication sécurisée (cryptage natif WebRTC)
-- ⚙️ Interface simple pour démarrer un appel
-- 🌐 Compatible avec les navigateurs modernes (Chrome, Firefox…)
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table des matières</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">À propos du projet</a>
+      <ul>
+        <li><a href="#built-with">Technologies utilisées</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Démarrage</a>
+      <ul>
+        <li><a href="#prerequisites">Prérequis</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Utilisation</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contribuer</a></li>
+    <li><a href="#license">Licence</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Remerciements</a></li>
+  </ol>
+</details>
 
----
+<!-- ABOUT THE PROJECT -->
+## À propos du projet
 
-## 🧱 Technologies utilisées
+[![PeerChat Screenshot][product-screenshot]](#)
 
-| **HTML/CSS/JavaScript** | Interface utilisateur |
-| **WebRTC API** | Connexion audio/vidéo en P2P |
-| **Socket.io** (ou WebSocket) | Signalisation entre clients |
+PeerChat est une application web de visioconférence moderne, simple et rapide, permettant de connecter deux utilisateurs en temps réel via la vidéo et l’audio.
 
----
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-## 📸 Aperçu
+### Technologies utilisées
 
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/WebRTC-333333?style=for-the-badge&logo=webrtc&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agora-009FFF?style=for-the-badge&logo=agora&logoColor=white"/>
+</p>
 
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-## 🔄 Fonctionnement
+<!-- GETTING STARTED -->
+## Démarrage
 
-1. L'utilisateur accède à la page d'accueil.
-2. Une connexion WebSocket est utilisée pour l'échange de signaux (offre/answer/candidate).
-3. WebRTC établit une connexion directe entre les deux navigateurs.
-4. Le flux audio/vidéo est transmis directement en P2P sans serveur central.
+Pour obtenir une copie locale du projet et le faire fonctionner :
 
----
+### Prérequis
 
-## 📚 Références
+Un navigateur moderne (Chrome, Firefox, Edge, ...)
 
-* [WebRTC Official Docs](https://webrtc.org/)
-* [MDN WebRTC Guide](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
-* [Socket.IO](https://socket.io/)
+### Installation
+
+1. Clonez le dépôt
+   ```sh
+   git clone https://github.com/makrame5/VisioConference_Platform.git
+   ```
+2. Ouvrez `index.html` dans votre navigateur
+3. Autorisez l’accès à la caméra et au micro
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+## Utilisation
+
+1. Accédez à la page d’accueil
+2. Cliquez sur les boutons pour activer/désactiver la caméra ou le micro
+3. Invitez un autre utilisateur à rejoindre la visioconférence
+
+_Pour plus d’exemples, voir la documentation ou le code source._
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Ajout du chat textuel
+- [ ] Support multi-utilisateurs
+- [ ] Amélioration de l’UI/UX
+
+Voir les [issues ouvertes](https://github.com/makrame5/VisioConference_Platform/issues) pour la liste complète des fonctionnalités proposées (et bugs connus).
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- CONTRIBUTING -->
+## Contribuer
+
+Les contributions sont ce qui fait de la communauté open source un endroit incroyable pour apprendre, inspirer et créer. Toute contribution est **appréciée** !
+
+1. Forkez le projet
+2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
+3. Commitez vos modifications (`git commit -m 'Add some AmazingFeature'`)
+4. Pushez sur la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- LICENSE -->
+## Licence
+
+Distribué sous licence MIT. Voir `LICENSE.txt` pour plus d’informations.
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Makram E. – makram@example.com
+
+Lien du projet : [https://github.com/makrame5/VisioConference_Platform](https://github.com/makrame5/VisioConference_Platform)
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Remerciements
+
+- [WebRTC Official Docs](https://webrtc.org/)
+- [MDN WebRTC Guide](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+- [Agora RTM SDK](https://docs.agora.io/en/Real-time-Messaging/)
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/makrame5/VisioConference_Platform.svg?style=for-the-badge
+[contributors-url]: https://github.com/makrame5/VisioConference_Platform/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/makrame5/VisioConference_Platform.svg?style=for-the-badge
+[forks-url]: https://github.com/makrame5/VisioConference_Platform/network/members
+[stars-shield]: https://img.shields.io/github/stars/makrame5/VisioConference_Platform.svg?style=for-the-badge
+[stars-url]: https://github.com/makrame5/VisioConference_Platform/stargazers
+[issues-shield]: https://img.shields.io/github/issues/makrame5/VisioConference_Platform.svg?style=for-the-badge
+[issues-url]: https://github.com/makrame5/VisioConference_Platform/issues
+[license-shield]: https://img.shields.io/github/license/makrame5/VisioConference_Platform.svg?style=for-the-badge
+[license-url]: https://github.com/makrame5/VisioConference_Platform/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/makram-e
+[product-screenshot]: icons/camera.png
 
