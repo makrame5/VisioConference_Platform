@@ -1,4 +1,4 @@
-﻿# P2P_Vision
+﻿# visioconference Platform 
 
 ````markdown
 # 🎥 PeerMeet - Application de visioconférence P2P
@@ -43,3 +43,4 @@
 * [WebRTC Official Docs](https://webrtc.org/)
 * [MDN WebRTC Guide](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 * [Socket.IO](https://socket.io/)
+
