@@ -1,64 +1,3 @@
-﻿
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
-
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/makrame5/VisioConference_Platform">
-    <img src="icons/camera.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">PeerChat – Plateforme de Visioconférence Moderne</h3>
-
-  <p align="center">
-    Application web de visioconférence moderne, rapide et intuitive.
-    <br />
-    <a href="https://github.com/makrame5/VisioConference_Platform"><strong>Explorer la doc »</strong></a>
-    <br />
-    <br />
-    <a href="#">Voir la démo</a>
-    &middot;
-    <a href="https://github.com/makrame5/VisioConference_Platform/issues/new?labels=bug">Signaler un bug</a>
-    &middot;
-    <a href="https://github.com/makrame5/VisioConference_Platform/issues/new?labels=enhancement">Demander une fonctionnalité</a>
-  </p>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table des matières</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">À propos du projet</a>
-      <ul>
-        <li><a href="#built-with">Technologies utilisées</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Démarrage</a>
-      <ul>
-        <li><a href="#prerequisites">Prérequis</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Utilisation</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contribuer</a></li>
-    <li><a href="#license">Licence</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Remerciements</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 ## À propos du projet
 
@@ -174,4 +113,5 @@ Lien du projet : [https://github.com/makrame5/VisioConference_Platform](https://
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/makram-e
 [product-screenshot]: icons/camera.png
+
 
