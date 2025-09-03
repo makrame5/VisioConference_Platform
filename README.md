@@ -1,10 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## À propos du projet
-
 [![PeerChat Screenshot][product-screenshot]](#)
-
 PeerChat est une application web de visioconférence moderne, simple et rapide, permettant de connecter deux utilisateurs en temps réel via la vidéo et l’audio.
-
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ### Technologies utilisées
@@ -113,5 +110,6 @@ Lien du projet : [https://github.com/makrame5/VisioConference_Platform](https://
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/makram-e
 [product-screenshot]: icons/camera.png
+
 
 
